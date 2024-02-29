@@ -7,7 +7,7 @@
     <style>
         /* Basic CSS for the navigation menu */
         nav {
-            background-color: #333;
+            background-color: hsl(64, 90%, 50%);
             padding: 10px;
         }
         ul {
@@ -19,19 +19,31 @@
             display: inline;
             margin-right: 20px;
         }
+
         a {
             text-decoration: none;
-            color: white;
+            color: black;
             font-weight: bold;
         }
         a:hover {
-            color: #ffd700; /* Change color on hover */
+            color: #0077ff; /* Change color on hover */
+        }
+
+        section {
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+
+        body{
+            align-items: center;
         }
     </style>
 </head>
 <body>
     <nav>
-        <ul>
+        <ul id="navlinks">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -40,15 +52,31 @@
     <!-- Sections content -->
     <section id="home">
         <h2>Home</h2>
-        <p>Welcome to our website!</p>
+        <span>Welcome to my  portfolio!!</span>
+        <p>Hey there, My name is Kings!</p>
     </section>
     <section id="about">
         <h2>About</h2>
-        <p>Learn more about us here.</p>
+        <p>😎 Am Kings Kariuki, a software developer in Kenya. <br>
+            🥹 Am passionate about creating quality applications and websites.<br>
+            🚀I like exploring new technology and participating in tech communities.<br>
+            🤖I have an intrest in data analysis and visualization too.<br> 
+            😎 love writing technical articles vast topics.</p>
     </section>
     <section id="projects">
         <h2>Projects</h2>
-        <p>Check out our latest projects.</p>
+        <p>Here are some of my notable projects</p>
+        <ul>
+            <li> <a href="https://pigdiceking.netlify.app/" >Pig Dice</a><br>
+                Pig dice a version of Pig a simple dice game first described in print by John Scarne in 1945<br>
+                Players take turns to roll a single die as many times as they wish, <br>
+                adding all roll results to a running total, but losing their gained score for the turn if they roll a 1
+            </li><br>
+            <li><a href="https://github.com/KingsMunene/GoalsApp">Goals Android Application</a><br>
+                This is an android application that allows a user to Record goals, mark them checked and delete once done <br>
+                It built using jetpack compose and Kotlin
+            </li>
+        </ul>
     </section>
 </body>
 </html>
